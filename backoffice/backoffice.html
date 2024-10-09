@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Backoffice</title>
+</head>
+<body>
+    <header align="center">
+        <h1>Add a Travel Offer</h1>
+    </header>
+    <form>
+        <label>Title</label><br>
+        <input type="text" id="Title" name="Title" placeholder="Title" required minlength="3" title="Entrer un titre de longueur minimale 3 caractères">
+        <br>
+        <label>Destination</label><br>
+        <input type="text" id="destination" name="destination" placeholder="Destination" required pattern="[A-Za-z\s]{3,}">
+        <br>
+        <label>Departure Date</label><br>
+        <input type="date" id="departure" name="departure" required>
+        <br>
+        <label>Return Date</label><br>
+        <input type="date" id="return" name="return" required>
+        <br>
+        <label>Price</label><br>
+        <input type="number" id="price" name="price" placeholder="Price" min="0" step="0.01">
+        <br>
+        <label>Availability</label><br>
+        <input type="checkbox" id="availability" name="availability">
+        <br>
+        <label>Category</label><br>
+        <select name="category" id="category">
+            <option value="adv">Adventure</option>
+            <option value="trip">Family Trip</option>
+            <option value="couple">Couples' Trip</option>
+            <option value="sport">Sport Trip</option>
+        </select>
+        <br>
+        <input type="submit" value="Add Offer" id="felsa">
+    </form>
+    <script src="addoffer.js"></script>
+</body>
+</html>
